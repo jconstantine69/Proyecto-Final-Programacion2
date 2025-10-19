@@ -4,13 +4,16 @@
  */
 package com.mycompany.campusparkingmanager;
 
+import java.util.List;
+
 /**
  *
  * @author valen
  */
-public enum VehicleCategory {
-    CAR,
-    MOTORCYCLE,
-    BICYCLE
+public class Visitor extends ParkingClient {
+
+    public Visitor (String name, String nationalId, List<Vehicle> vehicles) {
+        super (name, nationalId, vehicles);
+    }
     
 }
